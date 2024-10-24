@@ -1,0 +1,9 @@
+*.idea*
+cypress/screenshots/*
+cypress/videos/*
+cypress/reports/*
+node_modules/*
+.DS_Store
+cucumber-messages.ndjson
+cypress/support/step_definitions/generated.js
+*.temp

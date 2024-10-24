@@ -1,0 +1,35 @@
+{
+  "name": "@biq/saucedemo-cypress",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:install": "cypress install",
+    "cy:open": "cypress open --config-file config/standard_user/cypress.config.js",
+    "cy:run": "cypress run --browser electron --config-file config/standard_user/cypress.config.js",
+    "cy:run:mobile": "cypress run --browser electron --config-file config/standard_user/cypress.config-mobile.js",
+    "cy:run:tablet": "cypress run --browser electron --config-file config/standard_user/cypress.config-tablet.js",
+    "cy:run:laptop": "cypress run --browser electron --config-file config/standard_user/cypress.config-laptop.js",
+    "cy:run:desktop": "cypress run --browser electron --config-file config/standard_user/cypress.config-desktop.js",
+    "generateReport": "node ./scripts/cucumber-html-report.js",
+    "e2e:run": "./scripts/e2e.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "19.2.0",
+    "@cypress/webpack-preprocessor": "6.0.1",
+    "cypress": "13.6.4",
+    "multiple-cucumber-html-reporter": "3.6.2",
+    "webpack": "5.90.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "messages": {
+      "enabled": false
+    },
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/json/cucumber.json"
+    }
+  }
+}
