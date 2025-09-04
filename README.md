@@ -1,3 +1,8 @@
-# BiQ-aton Oktober 2024
+# BiQ-aton
 
-Iedere gebruiker maakt een map met als naam ${firstName}-${tool}, vb brecht-cypress 
+Iedere BiQ-aton krijgt zijn eigen folder:
+ - oct24
+ - sep25
+ - ...
+
+In deze folders maakt iedere deelnemer een map met als naam ${firstName}-${tool}, vb. brecht-cypress
